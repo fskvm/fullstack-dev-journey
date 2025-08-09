@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+     <div>
+       <input type="checkbox" id="agree" name="agree">
+       <label for="agree">I agree to terms and conditions</label>
+       <button type="submit">agree</button>
+     </div>
+     <div>
+         <!-- Using checked to auto check-->
+       <input type="checkbox" id="age" name="age" checked>
+       <label for="age">I'm 18+</label>
+       <button type="submit">yes</button>
+     </div>
+    </form>
+
+    <!-- To group multiple using same name attribute(unlike radio if you group together you can select only one but here can select multiple option. -->
+
+    <!-- The `value` attribute was introduced to assign a specific value to form elements (e.g., checkboxes, radio buttons), which gets sent to the server
+     when the form is submitted, enabling precise data handling and allowing the server to differentiate among user choices or selections. -->
+    <form action="/server">
+        Choose your Semester Subjects:
+        <div>
+        <input type="checkbox" name="sub"  value="DMDW" id="DMDW">
+        <label for="DMDW">Data Mining and Data Warehousing</label>
+        </div>
+        <div>
+        <input type="checkbox" name="sub"  value="SE" id="SE">
+        <label for="SE">Software Engineering</label>
+        </div>
+        <div>
+        <input type="checkbox" name="sub"  value="CN" id="CN">
+        <label for="CN">Computer Networks</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

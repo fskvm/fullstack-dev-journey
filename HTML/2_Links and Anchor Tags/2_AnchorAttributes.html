@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h4>Hypertext Reference(href)</h4>
+<a href="https://www.google.com">Visit Google</a>
+
+<hr>
+
+<h4>Target</h4>
+<div>
+    <!-- Open link in a new tab -->
+    <a href="https://www.youtube.com" target="_blank" rel="noopener">Visit YouTube(New Tab)</a>
+</div>
+<div>
+    <!-- Open link in the same tab -->
+    <a href="https://www.youtube.com" target="_self">Visit YouTube(Same Tab))</a>
+</div>
+
+<hr>
+
+<h4>Relationship(rel)</h4>
+<div>
+    <!-- External link with noopener (for security) -->
+    <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">External Link</a>
+</div>
+<div>
+    <!-- Add rel="nofollow" for links you don't want search engines to follow -->
+    <a href="https://www.example.com" rel="nofollow">Do Not Follow</a>
+</div>
+
+<hr>
+
+<h4>Download</h4>
+<div>
+    <!-- Download an HTML file -->
+    <!-- if you don't want to change the name of file then don't add value to download attribute. -->
+    <a href="1_AnchorElements.html" download>Download HTML Source Code</a>
+</div>
+<div>
+    <!-- Download a ZIP file -->
+    <!-- if you want to change the name of file then add value to download attribute. -->
+    <a href="Akhtar_img2.jpeg" download="Profile_Photo">Download Photo</a>
+</div>
+
+<hr>
+
+<h4>Title</h4>
+<!-- Help users understand what clicking the link does -->
+<a href="https://developer.mozilla.org" title="Visit MDN documentation for web developers">Go to MDN</a>
+
+<hr>
+
+<h4>Tab Order</h4>
+<!-- Custom Tab Order -->
+<a href="home.html" tabindex="1">Home</a>
+<a href="about.html" tabindex="3">About</a>
+<a href="contact.html" tabindex="2">Contact</a>
+
+<hr>
+
+<h4>Accesskey</h4>
+j
+<!-- - Defines a keyboard shortcut to activate the link. -->
+<!-- Shortcut: Alt + H (Windows) or Ctrl + Option + H (Mac) -->
+<a href="home.html" accesskey="h">Home</a>
+
+<hr>
+
+<h4>(ARIA)Accessible Rich Internet Application </h4>
+<!-- Accessible Label (Note you can provide label to anything) -->
+<a href="settings.html" aria-label="Settings Page">Settings</a>
+
+<!-- ARIA Role for a Button-like Link (Note you can right any text inside quotes, you wish according to action performed) -->
+<a href="submit.html" role="button">Submit</a>
+
+<hr>
+
+<h4>mailto: Protocol</h4>
+<div>
+    <a href="mailto:akhtar2lead@gmail.com">Contact Support</a>
+</div>
+<div>
+    <!-- With Additional Parameters that is subject=value&body=value -->
+    <a href="mailto:support@example.com?subject=Help Needed&body=Hi, I need assistance">Help Request</a>
+</div>
+
+<hr>
+
+<h4>tel: Protocol</h4>
+<a href="tel:+917520191591">Call Us: +91 7520191591</a>
+
+<hr>
+
+<h4>All Attributes</h4>
+
+<a
+        href="https://thapatechnical.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visit Thapa Technical's Website"
+        id="ThapaLink"
+        class="thapa-style"
+        style="color: white; background-color: blue; padding: 5px; text-decoration: none;"
+        tabindex="1"
+        accesskey="t"
+        aria-label="Visit Thapa Technical Website"
+>
+    Visit Thapa Technical
+</a>
+
+
+
+
+<!-- ------------------------------------- -->
+<!--* HTML ANCHOR TAG - ATTRIBUTES -->
+<!-- ------------------------------------- -->
+<!-- href: Specifies the URL or destination the link points to. -->
+<!-- target: Specifies where the linked content will be displayed (e.g., _blank for a new window/tab). -->
+<!-- download: Suggests that the target will be downloaded when clicked. -->
+<!-- rel: Describes the relationship between the current page and the linked page. -->
+<!-- title: Provides additional information when hovering over the link. -->
+<!-- id: Assigns a unique identifier to the anchor for linking within the page. -->
+<!-- class: Assigns a class for styling or JavaScript interactions. -->
+<!-- tabindex: Specifies the tab order when navigating using the keyboard. -->
+<!-- style: Applies inline CSS styling to the anchor. -->
+<!-- accesskey: Defines a keyboard shortcut to activate the link. -->
+<!-- aria-*: Attributes for accessibility purposes (e.g., aria-label). -->
+
+
+<!-- ------------------------------------- -->
+<!--* INTERVIEW QUESTIONS: HTML ANCHOR TAG -->
+<!-- ------------------------------------- -->
+
+<!-- 1: How can you create a link within the same webpage that takes the user to a specific section or element on the page? -->
+<!-- To create a link that takes the user to a specific section or element within the
+same webpage, you can use the anchor (a) tag's href attribute along with the id attribute of the target element. -->
+
+<!-- Example of this will next html file  -->
+
+<!-- 2: What's the difference between relative and absolute URLs in the href attribute? -->
+<!-- Relative URLs are URLs that are relative to the current page's URL.
+Absolute URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+<!-- 3: How does the download attribute work in the anchor tag? -->
+<!-- The download attribute suggests that the linked resource should be downloaded instead of navigated to, prompting the user to download the file. -->
+
+<!-- Example mentioned above -->
+
+
+<!-- 4: How do you create an HTML link that opens the user's default email client with a specific email address? -->
+<!-- <a href="mailto:thapa@technical.com">Send email to Thapa</a>   -->
+
+<!-- 5: How can you create a clickable link in HTML that allows users to directly initiate a phone call when clicked? -->
+<!-- To create a link that enables users to initiate a phone call when clicked, you
+can use the anchor tag's href attribute with the tel: protocol. -->
+<!-- <a href="tel:+1234567890">Call Us</a>  ->
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--The datalist element specifies a list of pre-defined options for an input element i.e. predefined + custom input -->
+<form action="/server">
+    <label for="country">Select a Country : </label>
+    <input list="countries" id="country" name="country">
+    <datalist id="countries">
+        <option value="usa">USA</option>
+        <option value="uk">United Kingdom</option>
+        <option value="india">India</option>
+        <option value="china">China</option>
+    </datalist>
+<!--  Features like `multiple`, `size`, `disabled`, `required` are supported in select tag but not in datalist tag.-->
+</form>
+</body>
+</html>

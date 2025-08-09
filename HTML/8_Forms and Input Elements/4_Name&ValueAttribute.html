@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="/action">
+    <!--Name attribute: name = value(pair) It is essential for form elements to include meaningful `name` attributes if the data needs to be processed server-side. -->
+    <!-- Value attribute: Below example we don't need value attribute as they were entered by user here
+         but value attribute can be used in   checkboxType,RadioType,RangeType,SelectTag,TextAreaTag etc -->
+    <div>
+        <label for="username">Enter the username:</label>
+        <input type="text" id="username" placeholder="Enter the username" name="user">
+    </div>
+    <div>
+        <label for="password">Enter the password:</label>
+        <input type="password" id="password" placeholder="Enter the password" name="pass">
+    </div>
+    <span>
+        <!-- Recommended -->
+        <button type="submit">Summit</button>
+        <!-- if type="submit" not mentioned but present inside form acts as default submit -->
+        <button>Submit2</button>
+    </span>
+
+</form>
+</body>
+</html>

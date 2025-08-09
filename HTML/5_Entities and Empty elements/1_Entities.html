@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <p>To (ctrl+f) Search HTML entities <a href="https://html.spec.whatwg.org/multipage/named-characters.html">click here</a></p>
+
+ <p>This is me,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Akhtar! </p>
+
+ <p>I love &hearts;</p>
+ <!-- All these can be written in decimal code form but we have to convert this unicode(U+02665) to decimal form -->
+ <p>I love &#9829;</p> <!-- In Decimal form -->
+ <p>I love &#x2665;</p> <!-- In Hexadecimal form -->
+
+ <!-- Ampersand sign and semicolon will work without entities but to always use these entities sometimes without them being misinterpreted by the browser.-->
+ <p>Tea &amp; biscuits</p>
+ <p>This is a &semi; </p>
+
+ <p>Temperature is 45&deg;celcius</p>
+ <p>This is a &bigstar;</p>
+
+ <p> a &lt; b &amp; b &gt; a</p>
+ <p> &apos; Hola &apos; means greeting in Spanish language</p>
+ <p> &quot; Hola &quot; means greeting in Spanish language</p>
+
+
+ <!--* INTERVIEW QUESTIONS: HTML ENTITIES  -->
+
+ <!--? 1: When might you use the &nbsp; entity? -->
+ <!--* The &nbsp; entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one. -->
+
+ <!--? 2: How would you display a trademark symbol using an HTML entity? -->
+ <!-- You can display a trademark symbol using the &trade; entity: &trade;. -->
+
+ <!--? 3: Why is it important to use HTML entities for special characters? -->
+ <!--* Using HTML entities ensures proper rendering of characters and symbols and helps avoid conflicts with HTML syntax.-->
+
+ <!--? 4: Represent the dollar sign symbol using different HTML entity methods -->
+ <!-- Using Named Entity: &dollar; -->
+ </body>
+ </html>

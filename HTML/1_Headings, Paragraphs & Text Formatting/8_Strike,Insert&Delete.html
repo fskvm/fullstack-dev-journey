@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s vs del Example</title>
+</head>
+<body>
+<!-- Example of <s>: Non-semantic strikethrough -->
+<p>
+    This item was <s>$50</s> but is now on sale for <strong>$30</strong>.
+</p>
+<!-- Explanation: The <s> tag is used here to show that the old price was altered, but there’s no semantic meaning of deletion. It’s simply for stylistic purposes (e.g., representing discounts). -->
+
+<!-- Example of <del>: Semantic deletion -->
+<p>
+    The committee decided to
+    <del>cancel the event</del>
+    postpone the event to next month.
+</p>
+<!-- Explanation: The <del> tag is used here to indicate that the text was intentionally removed or changed as part of editing the document. Such information is relevant semantically. -->
+
+<!-- Combined Use Case -->
+<p>
+    The previous product description,
+    <del>This model is discontinued</del>
+    , has been replaced with <ins>New stock is available now!</ins>. <!-- Insert text will be in underlined -->
+</p>
+<!-- Explanation: The <del> tag informs users (and screen readers) that the original text has been removed, adding semantic information alongside visual styling. -->
+
+</body>
+</html>

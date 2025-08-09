@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="/server">
+    <!-- FIle type -->
+    <div>
+        <label for="fileUpload">Upload File</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx" required multiple>
+    </div>
+
+    <!--
+    Multiple Attribute : how to select multiple files at once
+    - Open the file picker and select multiple files at once.
+    - Hold the Ctrl (or Cmd) key to select multiple files in the file dialog.
+ -->
+    <!-- Date Type -->
+    <div>
+        <label for="Birthdate">Enter your BirthDate : </label>
+        <input type="date" id="Birthdate" name="Birthdate">
+    </div>
+    <!-- Time Type -->
+    <div>
+        <label for="appointmentTime">Enter your Appointment Time : </label>
+        <input type="time" id="appointmentTime" name="AppointmentTime">
+    </div>
+    <!-- Month Type -->
+    <div>
+        <label for="month">Enter your Month & Year : </label>
+        <input type="month" id="month" name="month&year">
+    </div>
+    <!-- Week Type -->
+    <div>
+        <label for="week">Enter your Vacation Week : </label>
+        <input type="week" id="week" name="VacationWeek">
+    </div>
+    <!-- datetime-local type -->
+    <div>
+        <label for="datetime-local">Enter present date and appointment type : </label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local">
+    </div>
+    <!-- Image Type -->
+    <div>
+        <input type="image" src="Akhtar_img2.jpeg" alt="Submit" width="48" height="48">
+    </div>
+    <button type="submit">summit</button>
+    <!-- Reset Type -->
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>

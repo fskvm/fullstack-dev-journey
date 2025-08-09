@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Example</title>
+    <style>
+        img {
+            box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to Our Store Locator</h1>
+<p>Click on a region on the map to Learn Historical Society</p>
+
+<!-- Image with an associated map -->
+<img src="USAmap.jpg" alt="USA Map" usemap="#USA-map" loading="lazy">
+
+<!-- Defining the clickable areas for your image using website - https://www.image-map.net/ -->
+<!-- You can use shapes like rect, circle or poly in website and mentioned the shape in html and rest are same-->
+<map name="USA-map">
+    <area target="_blank" rel="noopener" alt="Texas Location on USA map" title="Texas Historical Society"
+          href="https://www.thc.texas.gov/" coords="1599,1328,1228,1171" shape="rect">
+    <area target="_blank" rel="noopener" alt="Kansas Location on USA map" title="Kansas Historical Society"
+          href="https://www.kshs.org/" coords="1279,804,1564,951" shape="rect">
+    <area target="_blank" rel="noopener" alt="Montana Location on USA map" title="Montana Historical Society"
+          href="https://mhs.mt.gov/" coords="884,314,1223,497" shape="rect">
+</map>
+
+
+<!--* INTERVIEW QUESTIONS: HTML IMAGE TAG -->
+
+<!-- 1: How would you make an image responsive using the width attribute? -->
+<!-- You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space. -->
+
+<!--? 2: How do you create an image link using the <img> tag? -->
+<!-- You wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag. -->
+
+<!--? 3: What's the difference between relative and absolute URLs in the href attribute? -->
+<!-- Relative URLs are URLs that are relative to the current page's URL. Absolute
+URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+<!--? 4: Why is providing descriptive alt text for images important? It improves -->
+<!-- accessibility for users with visual impairments and helps search engines
+understand image content.
+</body>
+</html>

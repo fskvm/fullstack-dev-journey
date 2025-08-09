@@ -1,0 +1,32 @@
+.box{
+    height: 100px;
+    width: 400px;
+    background-color: hotpink;
+    /*animation-name: widthColAnimation;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: ease-in-out;*/
+    /*animation-delay: 0s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+
+    animation: widthColAnimation 4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes widthColAnimation {
+    0% {
+        width: 400px;
+        background-color: red;
+        font-size: 10px;
+    }
+    50% {
+        width: 200px;
+        background-color: blue;
+        font-size: 20px;
+    }
+    100% {
+        width: 400px;
+        background-color: green;
+        font-size: 10px;
+    }
+
+}

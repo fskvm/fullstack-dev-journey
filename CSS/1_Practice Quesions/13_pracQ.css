@@ -1,0 +1,20 @@
+#outer{
+    width: 400px;
+    height: 400px;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#outer div{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightslategray;
+    text-align: center;
+}

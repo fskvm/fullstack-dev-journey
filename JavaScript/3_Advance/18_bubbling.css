@@ -1,0 +1,35 @@
+#both {
+    background-color: pink;
+    height: 200px;
+    width: 400px;
+}
+#both1 {
+    background-color: lightblue;
+}
+.both2 {
+    background-color: yellowgreen;
+}
+#bubbling{
+    background-color: red;
+    height: 200px;
+    width: 400px;
+}
+#bubbling1{
+    background-color: green;
+}
+
+.bubbling2{
+    background-color: yellow;
+}
+#capturing{
+    background-color: violet;
+    height: 200px;
+    width: 400px;
+}
+#capturing1{
+    background-color: mediumvioletred;
+}
+
+.capturing2{
+    background-color: orange;
+}

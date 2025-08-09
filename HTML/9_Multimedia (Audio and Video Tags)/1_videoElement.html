@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--  Preferred audio format is mp3, ogg, wav, mp4 only in sequence mostly used 1 then to 4.-->
+<!-- ogg and ogv is not support by safari browser so avoid to use it too -->
+<video width="600" height="400" controls autoplay muted loop>
+    <source src="video_1_4K.mp4" type="video/mp4">
+    <source src="video_2_4K.webm" type="video/webm">
+    <source src="video_3_4K.ogv" type="video/ogg">
+    <source src="video_4_4K.mov" type="video/mov"> <!-- if you comment all sources video this will not work as website does not support. -->
+    Your browser does not support the video tag.
+</video>
+
+<!--You can also use video tag without source tag like below:-->
+<video src="video_1_4K.mp4" width="600" height="400" controls autoplay muted loop></video>
+
+<!--website for changing format(Free convertor) - https://www.freeconvert.com-->
+</body>
+</html>

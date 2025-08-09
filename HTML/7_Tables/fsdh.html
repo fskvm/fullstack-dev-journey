@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sunshine Kids Nursery | Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Sunshine Kids Nursery</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section style="background: lightblue; text-align: center; padding: 70px; margin-top: 70px; font-size: 30px;">
+    <h2>Welcome to Our Colorful World!</h2>
+    <p>Where Little Minds Grow Big!</p>
+</section>
+
+
+<!-- About Us -->
+<section id="about">
+    <h2>Who We Are</h2>
+    <p>Welcome to Sunshine Kids Nursery! We create a vibrant and safe environment for children to learn and grow.</p>
+</section>
+
+<!-- Activities -->
+<section>
+    <h2>Our Daily Activities</h2>
+    <h3>Creative Arts</h3>
+    <ul>
+        <li>Finger painting</li>
+        <li>Clay modeling</li>
+        <li>Craft projects</li>
+    </ul>
+    <h3>Music and Movement</h3>
+    <ul>
+        <li>Sing-alongs</li>
+        <li>Dance parties</li>
+    </ul>
+</section>
+
+<!-- Daily Schedule -->
+<section>
+    <h2>Daily Schedule</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>Morning Circle Time</td>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>Creative Play</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Contact Form -->
+<section>
+    <h2>Enquiry Form</h2>
+    <form>
+        <label for="name">Parent's Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br>
+
+        <label for="email">Parent's Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br>
+
+        <label for="program">Select program:</label>
+        <select id="program" name="program">
+            <option value="full">Full day program</option>
+            <option value="half">Half day program</option>
+        </select>
+
+        <br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Sunshine Kids Nursery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Email Type -->
+<form action="/action">
+    <div>
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email" value="" autocomplete="off" size="30"
+               pattern="[a-z0._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               title="Enter a valid email (e.g., john.doe@example.com)" multiple> <!-- you write multiple email by comma separated -->
+    </div>
+    <!--
+        -  Pattern attribute:
+
+        - `[a-z0._%+-]+`: Matches the local part of the email (before `@`).
+        - `@[a-z0-9.-]+`: Matches the domain part (after `@`).
+        - `\.[a-z]{2,}$`: Ensures the domain has a valid TLD or extension (e.g., `.com`, `.org`).
+
+        - By default, the `autocomplete` attribute in HTML forms is 'on'
+        - The `size` attribute defines the visible width of the input field in terms of character units, not actual
+          character limits.Use styling CSS(Recommended)
+
+        - Pattern attribute:
+        - \+? : Allows an optional '+' for international numbers
+        - [0-9\s\-] : Matches digits, spaces, or hyphens for flexible formatting
+        - {7,15} : Ensures the number is 7 to 15 characters long
+
+       -->
+    <div>
+        <!-- Tel Type -->
+        <label for="tel">Enter your phone number : </label>
+        <input autocomplete="off" id="tel" name="tel" pattern="\+?[0-9\s\-]{7,15}" size="30"
+               title="Enter a valid phone number (7 to 15 digits, optional +)" type="tel" maxlength="15"
+               value="">
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

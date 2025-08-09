@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="/action">
+    <div>
+        <label for="username">Enter the username:</label>
+        <input type="text" id="username" placeholder="Enter the username">
+    </div>
+    <div>
+        <label for="password">Enter the password:</label>
+        <input type="password" id="password" placeholder="Enter the password">
+    </div>
+    <div>
+<!-- 1) <input> Element with `type="button" it is less efficient` [Don't use Alert!]-->
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Reset Form">
+    <input type="button" value="Click Me">
+    </div>
+
+    <span>
+<!-- 2) Preferred Approach using only <button> (Use this one) -> includes three type that is Summit , Reset and Button(for custom action used by javaScript interaction -->
+        <button type="submit">Summit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </span>
+
+</form>
+</body>
+</html>

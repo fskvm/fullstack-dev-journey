@@ -1,0 +1,22 @@
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px black;
+    transition: 1s;
+    cursor: pointer;
+}
+.desc{
+    padding: 0 5px 0 5px;
+}
+img{
+    border-radius: 5px 5px 0 0;
+}
+.card:hover{
+    box-shadow: 4px 8px 16px black;
+    transform: scale(1.1);
+}
