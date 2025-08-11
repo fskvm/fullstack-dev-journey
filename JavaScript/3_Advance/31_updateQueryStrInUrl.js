@@ -30,11 +30,6 @@ function show(colArr) {
 }
 
 
-//eadd
-
-
-
-
 
 
 
