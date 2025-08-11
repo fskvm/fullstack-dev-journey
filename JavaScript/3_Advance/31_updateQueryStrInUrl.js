@@ -28,3 +28,5 @@ function show(colArr) {
         list.appendChild(li);
     }
 }
+
+
