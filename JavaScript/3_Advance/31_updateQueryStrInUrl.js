@@ -32,3 +32,7 @@ function show(colArr) {
 
 
 
+
+
+
+
