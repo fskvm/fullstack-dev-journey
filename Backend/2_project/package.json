@@ -1,0 +1,16 @@
+{
+  "name": "npminit",
+  "version": "1.0.0",
+  "description": "Demonstrate how to add package using npm init in our project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhtar raza",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1",
+    "random-words": "^2.0.1"
+  }
+}
