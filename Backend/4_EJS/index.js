@@ -24,3 +24,25 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send("this is added in code to demonstrate that if we run the server with path like nodemon 4_EJS/index.js, it will not search for the views folder. So we need to specify the path of the file using path package which does need to be installed, just require it. ");
 });
+
+
+//todo - Passing data to EJS
+app.get('/roll', (req, res) => {
+
+    let diceVal = Math.floor(Math.random() * 6) + 1;
+
+//? res.render("rolldice.ejs", { num : diceVal}); //To pass data from database to the ejs file we also pass the second argument as an object(key-value pair) and then we can access the data in the ejs file using the key
+//? res.render("rolldice.ejs", { diceVal : diceVal}); //we can use same key and value name
+
+//! OR best way to pass one variable.
+    res.render("rolldice.ejs", { diceVal });
+
+});
+
+//* A little instagram username page
+app.get('/ig/:user', (req, res) => {
+    let { user : username } = req.params; //? we can the user to username if we want to change the name of the variable.
+    let followers = ["Sam", "Raza", "Akhtar"];
+    res.render("instagram.ejs", { username , followers });
+});
+
